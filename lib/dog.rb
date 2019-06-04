@@ -61,7 +61,7 @@ class Dog
     end
     #attributes = {id: id, name: @name, breed: @breed}
     #self.create(attributes)
-    self.create()
+    self.create(id: id, name: @name, breed: @breed)
   end
 
 end
