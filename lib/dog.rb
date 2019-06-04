@@ -91,7 +91,7 @@ class Dog
       @breed = row[2]
     end
 
-    self.create(id: @id, name: name, breed: @breed)
+    self.find_or_create_by(id: @id, name: name, breed: @breed)
   end
 
 end
