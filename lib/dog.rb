@@ -59,8 +59,9 @@ class Dog
       @name = row[1]
       @breed = row[2]
     end
-    attributes = {id: id, name: @name, breed: @breed}
-    self.create(attributes)
+    #attributes = {id: id, name: @name, breed: @breed}
+    #self.create(attributes)
+    self.create()
   end
 
 end
