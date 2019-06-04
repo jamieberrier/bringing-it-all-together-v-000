@@ -62,8 +62,8 @@ class Dog
     end
 
     DB[:conn].execute(sql, id).map do |row|
-      @name = row[]
-      @breed = row[]
+      @name = row[1]
+      @breed = row[2]
     end
   end
 
