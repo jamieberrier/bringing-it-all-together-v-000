@@ -6,7 +6,9 @@ class Dog
   # as an argument. key-value pairs need to contain id, name, and
   # breed.
   def initialize(argument_hash)
-
+    @id = id
+    @name = name
+    @breed = breed
   end
 
   def self.create_table
