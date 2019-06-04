@@ -87,11 +87,11 @@ class Dog
     SQL
 
     DB[:conn].execute(sql, name)#.map do |row|
-    #  @name = row[1]
-    #  @breed = row[2]
-    #end
+      @name = row[1]
+      @breed = row[2]
+    end
 
-    #self.create(id: id, name: @name, breed: @breed)
+    self.create(id: id, name: @name, breed: @breed)
   end
 
 end
