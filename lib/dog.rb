@@ -55,7 +55,10 @@ class Dog
       LIMIT 1
     SQL
 
-    DB[:conn].execute(sql, id).map { |row| @name = row[1], @breed = row[2] }
+    DB[:conn].execute(sql, id).map do |row|
+      @name = row[1]
+      @breed = row[2]
+    end
 
     self.create(id: id, name: @name, breed: @breed)
   end
