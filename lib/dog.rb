@@ -56,8 +56,8 @@ class Dog
     SQL
 
     DB[:conn].execute(sql, id).map do |row|
-      binding.pry
-      self.new(row)
+      #binding.pry
+      #self.new(row)
     end
   end
 
