@@ -57,7 +57,7 @@ class Dog
 
     DB[:conn].execute(sql, id).map do |row|
       binding.pry
-      self.new(row)
+      self.new(row.to_h)
     end
   end
 
