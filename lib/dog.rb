@@ -59,7 +59,7 @@ class Dog
       @name = row[1]
       @breed = row[2]
     end
-    attributes = 
+    attributes = {}
     self.create(attributes)
   end
 
