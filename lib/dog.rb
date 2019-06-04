@@ -44,6 +44,6 @@ class Dog
   end
 
   def self.create(attributes)
-
+    attributes.each {|key, value| self.send(("#{key}="), value)}
   end
 end
