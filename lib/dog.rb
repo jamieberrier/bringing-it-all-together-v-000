@@ -5,7 +5,7 @@ class Dog
   # accepts a hash or keyword argument value with key-value pairs
   # as an argument. key-value pairs need to contain id, name, and
   # breed.
-  def initialize(argument_hash)
+  def initialize(attributes)
     attributes.each {|key, value| self.send(("#{key}="), value)}
   end
 
