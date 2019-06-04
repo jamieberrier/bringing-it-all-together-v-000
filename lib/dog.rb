@@ -1,7 +1,6 @@
 class Dog
   attr_accessor :id, :name, :breed
-  #attr_reader :id
-
+  
   # accepts a hash or keyword argument value with key-value pairs
   # as an argument. key-value pairs need to contain id, name, and
   # breed.
