@@ -44,7 +44,9 @@ class Dog
   end
 
   def self.create(attributes)
-    attributes.each {|key, value| self.send(("#{key}="), value)}
+    attributes.each {|key, value|
+      binding.pry
+      self.send(("#{key}="), value)}
     save
   end
 end
