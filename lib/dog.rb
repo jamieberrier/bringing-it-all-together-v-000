@@ -60,7 +60,7 @@ class Dog
       @breed = row[2]
     end
 
-    self.create()
+    self.create(attributes)
   end
 
 end
