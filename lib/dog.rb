@@ -54,6 +54,12 @@ class Dog
       WHERE id = ?
       LIMIT 1
     SQL
+    
+    db.execute(sql, id).map do |row|
+      @name = row[1]
+      @type = row[2]
+      @hp = row[3]
+    end
 
     DB[:conn].execute(sql, id).map do |row|
       binding.pry
