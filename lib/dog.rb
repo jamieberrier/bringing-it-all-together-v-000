@@ -56,8 +56,9 @@ class Dog
     SQL
 
     DB[:conn].execute(sql, id).map do |row|
-      attributes = row.each {|key, value| self.send(("#{key}="), value)}
       binding.pry
+      attributes = row.each {|key, value| self.send(("#{key}="), value)}
+
       self.create(attributes)
     end
   end
