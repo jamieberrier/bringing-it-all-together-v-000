@@ -75,7 +75,7 @@ class Dog
   end
 
   def self.new_from_db(dog)
-    Dog.new(id: dog[0], name: dog[1], breed: dog[2])
+    Dog.create(id: dog[0], name: dog[1], breed: dog[2])
   end
 
   def self.find_by_name(name)
