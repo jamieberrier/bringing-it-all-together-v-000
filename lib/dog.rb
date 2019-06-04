@@ -25,7 +25,6 @@ class Dog
   end
 
   def save
-    binding.pry
     if self.id
       self.update
     else
@@ -36,6 +35,7 @@ class Dog
       DB[:conn].execute(sql, self.name, self.breed)
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
     end
+    binding.pry
   end
 
   def update
