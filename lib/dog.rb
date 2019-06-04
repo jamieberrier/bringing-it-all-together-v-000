@@ -27,4 +27,8 @@ class Dog
   def save
 
   end
+
+  def update
+
+  end
 end
