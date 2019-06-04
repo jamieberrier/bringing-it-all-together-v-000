@@ -43,7 +43,7 @@ class Dog
     DB[:conn].execute(sql, self.name, self.album, self.id)
   end
 
-  def self.create_table
+  def self.create
 
   end
 end
