@@ -62,10 +62,8 @@ class Dog
     end
 
     DB[:conn].execute(sql, id).map do |row|
-      binding.pry
-      attributes = row.each {|key, value| self.send(("#{key}="), value)}
-
-      self.create(attributes)
+      @name = row[]
+      @breed = row[]
     end
   end
 
